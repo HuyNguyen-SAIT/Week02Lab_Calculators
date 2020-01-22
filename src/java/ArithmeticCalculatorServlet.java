@@ -29,6 +29,63 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        int num1=0;
+        int num2=0;
+        String first = request.getParameter("first");
+        String second = request.getParameter("second");
+        if(first==null || second ==null)
+        {
+            request.setAttribute("result", "---");
+        }
+        else{
+        if(first=="" || second == "")
+        {
+            request.setAttribute("result", "invalid");
+        } 
+        else{
+          
+        try
+           {
+               num1 = Integer.parseInt(first);
+               num2 = Integer.parseInt(second);
+           }
+        catch(NumberFormatException e)
+        {
+            request.setAttribute("result", "invalid");
+            
+        }
+        
+        if(request.getParameter("add") != null)
+        {
+           request.setAttribute("result", num1+num2);
+        }
+        else
+            if(request.getParameter("minus") != null)
+            {
+                request.setAttribute("result", num1-num2);
+        }
+        else
+                if(request.getParameter("div") != null)
+                {
+                    try{
+                    request.setAttribute("result", num1/num2);
+                    }
+                    catch(Exception e)
+                    {
+                        request.setAttribute("result", "invalid");
+                    }
+                    }
+        else
+                    if(request.getParameter("mul") != null)
+                {
+                   request.setAttribute("result", num1*num2); 
+                }
+        }
+    }
+        
+        
+            
+       
 //        try (PrintWriter out = response.getWriter()) {
 //            /* TODO output your page here. You may use following sample code. */
 //            out.println("<!DOCTYPE html>");
@@ -41,6 +98,7 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
 //            out.println("</body>");
 //            out.println("</html>");
 //        }
+
    getServletContext().getRequestDispatcher("/arithmeticcalculator.jsp").forward(request, response);
     }
 

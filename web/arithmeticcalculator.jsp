@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Arithmetic Calculator</title>
     </head>
     <body>
         <h1>Arithmetic Calculator</h1>
@@ -33,10 +33,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" value="+">
-                        <input type="submit" value="-">
-                        <input type="submit" value="*">
-                        <input type="submit" value="%">
+                        <button name="add">+</button>
+                        <button name="minus">-</button>
+                        <button name="mul">*</button>
+                        <button name="div">%</button>
                     </td>
                 </tr>
                 <tr>
@@ -48,6 +48,6 @@
             </table>    
             
       </form>
-      <a href="agecalculator.jsp">Age Calculator</a> 
+      <a href="Web02lab_Calculators/age">Age Calculator</a> 
     </body>
 </html>

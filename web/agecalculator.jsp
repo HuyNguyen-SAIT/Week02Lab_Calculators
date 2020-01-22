@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Age Calculator</title>
 <!--    <script type="text/javascript">
             function checkAge()
             {
@@ -69,7 +69,7 @@
             
       </form>
         ${errorMessage}
-        <a href="arithmeticcalculator.jsp">Arithmetic Calculator</a>
+        <a href="/Web02lab_Calculators/arithmetic">Arithmetic Calculator</a>
         
         
         
