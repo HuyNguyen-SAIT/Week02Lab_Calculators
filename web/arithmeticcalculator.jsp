@@ -20,7 +20,7 @@
                         First:
                     </td>
                     <td>
-                        <input type="text" size="25" name="first" maxlength="25" title="Max 25 digits">
+                        <input value="${first}" type="text" size="25" name="first" maxlength="25" title="Max 25 digits">
                     </td>
                 </tr>
                 <tr>
@@ -28,7 +28,7 @@
                         Second:
                     </td>
                     <td>
-                        <input type="text" size="25" name="second" maxlength="25" title="Max 25 digits">
+                        <input value="${second}" type="text" size="25" name="second" maxlength="25" title="Max 25 digits">
                     </td>
                 </tr>
                 <tr>

@@ -98,7 +98,8 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
 //            out.println("</body>");
 //            out.println("</html>");
 //        }
-
+   request.setAttribute("first", first);
+   request.setAttribute("second", second);
    getServletContext().getRequestDispatcher("/arithmeticcalculator.jsp").forward(request, response);
     }
 

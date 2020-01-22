@@ -56,7 +56,7 @@
                         Enter your age:
                     </td>
                     <td>
-                        <input type="text" size="25" name="age" maxlength="3" title="Max 3 digits">
+                        <input value="${age}" type="text" size="25" name="age" maxlength="3" title="Max 3 digits">
                     </td>
                 </tr>
                 <tr>
