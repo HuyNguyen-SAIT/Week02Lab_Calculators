@@ -56,7 +56,7 @@
                         Enter your age:
                     </td>
                     <td>
-                        <input type="text" size="25" name="age">
+                        <input type="text" size="25" name="age" maxlength="3" title="Max 3 digits">
                     </td>
                 </tr>
                 <tr>
@@ -68,8 +68,9 @@
             </table>    
             
       </form>
-        <span id="errorMessage"></span>
-        <a href="/agecalculator.jsp">Arithmetic Calculator</a>
+        ${errorMessage}
+        <a href="arithmeticcalculator.jsp">Arithmetic Calculator</a>
+        
         
         
     </body>
