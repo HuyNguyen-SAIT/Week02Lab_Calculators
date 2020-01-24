@@ -29,8 +29,8 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        int num1=0;
-        int num2=0;
+        float num1=0;
+        float num2=0;
         String first = request.getParameter("first");
         String second = request.getParameter("second");
         if(first==null || second ==null)
@@ -46,8 +46,8 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
           
         try
            {
-               num1 = Integer.parseInt(first);
-               num2 = Integer.parseInt(second);
+              num1 = Float.parseFloat(first);
+              num2 = Float.parseFloat(second);
            }
         catch(NumberFormatException e)
         {
